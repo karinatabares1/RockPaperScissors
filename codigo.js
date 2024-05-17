@@ -41,10 +41,10 @@ function playGame(jugada) {
         (jugada === 2 && pc === 1) ||
         (jugada === 3 && pc === 2)
     ) {
-        updateResult("GANASTE");
+        updateResult("GANASTE 🤩🥳");
         playerScore++;
     } else {
-        updateResult("PERDISTE");
+        updateResult("PERDISTE😪😓");
         computerScore++;
     }
 
@@ -53,7 +53,7 @@ function playGame(jugada) {
   
     if (playerScore === 3 || computerScore === 3) {
         gameOver = true;
-        let finalResult = playerScore === 3 ? "¡Felicidades, ganaste!" : "Lo siento, perdiste.";
+        let finalResult = playerScore === 3 ? "¡Felicidades, ganaste 🥳!" : "Lo siento, perdiste😓.";
         alert(finalResult);
         updateResult(finalResult);
         disableButtons();
@@ -76,11 +76,11 @@ function aleatorio(min, max) {
 function eleccion(jugada) {
     let resultado = "";
     if (jugada == 1) {
-        resultado = "Piedra";
+        resultado = "Piedra🪨";
     } else if (jugada == 2) {
-        resultado = "Papel";
+        resultado = "Papel🗞️";
     } else if (jugada == 3) {
-        resultado = "Tijera";
+        resultado = "Tijera✂️";
     } else {
         resultado = "GAME OVER";
     }
